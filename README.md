@@ -1,4 +1,3 @@
-
 # EX-01-Datatypes-Operators
 ## AIM:
 Write a C program to read 3 characters one by one and print the characters in a reverse order.
@@ -10,28 +9,27 @@ Write a C program to read 3 characters one by one and print the characters in a 
 4.	End the program.
 
 ## PROGRAM:
+```c
+#include <stdio.h>
 
+int main() {
+    char firstChar, secondChar, thirdChar;
+
+    scanf(" %c", &firstChar);
+    scanf(" %c", &secondChar);
+    scanf(" %c", &thirdChar);
+
+    printf("%c %c %c\n", thirdChar, secondChar, firstChar);
+
+    return 0;
+}
+```
 ## OUTPUT:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/e4616792-040c-40fa-8923-91df8e747b47)
 
 ## RESULT:
 Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
-
+<hr>
 
 # EX-02- Conditional-Statements
 ## AIM:
@@ -46,24 +44,32 @@ Write a C program to read A values and check whether A is positive number or not
 6.End the program.
 
 # PROGRAM:
+```c
+#include <stdio.h>
 
+int main() {
+    int a;
+
+    scanf("%d", &a);
+
+    if (a > 0) {
+        printf("Positive number\n");
+    } else {
+        printf("Not a positive number\n");
+    }
+
+    return 0;
+}
+```
 # OUTPUT:
 
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/3e7391f7-b603-4170-9266-d8b93d260dff)
 
 # RESULT:
 Thus the program to read A values and check whether A is positive number or not has been executed successfully.
  
  
- 
+<hr> 
 
 
 # EX-03- Operators-Expressions
@@ -80,21 +86,30 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
+```c
+#include <stdio.h>
 
+int main() {
+    float firstNumber, secondNumber, minNumber;
+
+    scanf("%f", &firstNumber);
+    scanf("%f", &secondNumber);
+
+    minNumber = (firstNumber < secondNumber) ? firstNumber : secondNumber;
+
+    printf("Minimum number: %.2f\n", minNumber);
+
+    return 0;
+}
+```
 ## OUTPUT:
 
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/027b614d-e978-441a-a37a-f2de9424f475)
 
 ## RESULT:
 Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
 
-
+<hr>
 
 
 # EX-04- Using Conditional Statements
@@ -111,23 +126,31 @@ Write a C program to check whether the input value is equal to 1 using simple if
 6.	End the program.
 
 ## PROGRAM:
+```c
+#include <stdio.h>
 
+int main() {
+    int inputValue;
+
+    scanf("%d", &inputValue);
+
+    if (inputValue == 1) {
+        printf("Input is equal to 1\n");
+    } else {
+        printf("Input is not equal to 1\n");
+    }
+
+    return 0;
+}
+```
 ## OUTPUT:
 
-
-
-
-
-
-
-
-
-	
+![image](https://github.com/user-attachments/assets/ff8f8130-31f1-43ab-b67c-cc4abac00010)
 
 ## RESULT:
 Thus the program to check whether the input value is equal to 1 using simple if statement has been executed successfully
 
-
+<hr>
 
 # EX-05- Calculating Total, Percentage, And Division Using Conditional Statements 
 ## AIM:
@@ -147,8 +170,42 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
+```c
+#include <stdio.h>
 
+int main() {
+    int mark1, mark2, mark3;
+    float total, percentage;
+
+    scanf("%d", &mark1);
+    scanf("%d", &mark2);
+    scanf("%d", &mark3);
+
+    total = mark1 + mark2 + mark3;
+    percentage = total / 3;
+
+    printf("%.2f\n", total);
+    printf("%.2f\n", percentage);
+
+    if (mark1 >= 40 && mark2 >= 40 && mark3 >= 40) {
+        if (percentage >= 60) {
+            printf("Division = First\n");
+        } else if (percentage >= 48) {
+            printf("Division = Second\n");
+        } else if (percentage >= 36) {
+            printf("Division = Pass\n");
+        } else {
+            printf("Division = Fail\n");
+        }
+    } else {
+        printf("Division = Fail\n");
+    }
+
+    return 0;
+}
+```
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/e5fff49a-7461-4973-af43-2aa90f6dbda3)
 
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
