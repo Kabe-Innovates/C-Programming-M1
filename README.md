@@ -25,7 +25,7 @@ int main() {
 }
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/e4616792-040c-40fa-8923-91df8e747b47)
+![image](https://github.com/user-attachments/assets/c086c866-27a1-4fee-8437-2e9b7940a4ff)
 
 ## RESULT:
 Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
